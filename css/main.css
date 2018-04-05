@@ -51,28 +51,13 @@ a:hover {
 }
 #stage p {
 	color:#555;
+	font-size:20px;
 }
 #stage h1 {
 	font-family: 'Lora', serif;
-	font-size:40px;
+	font-size:50px;
 	color:#333;
 	font-weight:400;
-}
-
-#stage ul.contact {
-	padding:0;
-	margin-top:40px;
-	list-style-type:none;
-	font-size:12px;
-}
-
-#stage ul.contact li {
-	color:#333;
-	padding:10px;
-	border-left:1px solid #999;
-}
-#stage ul.contact li:hover {
-	border-left:1px solid #333;
 }
 #photo-credit {
 	position:fixed;
