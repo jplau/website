@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url('../images/bg-web.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#container {
+	overflow:hidden;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#nav {
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	text-transform:uppercase;
+}
+#nav ul {
+	padding-left:0;
+}
+#nav li {
+	list-style-type:none;
+	float:left;
+	padding:8px 15px 8px 15px
+}
+#nav li a {
+	color:#333;
+	text-decoration:none;
+}
+#nav li a:hover {
+	color:#999;
+}
+#nav li.active {
+	border-bottom:1px solid #999;
+}
+#nav li:hover {
+	border-bottom:1px solid #999;
+}
+#stage {
+	position:absolute;
+	top:15%;
+	width: 50%;
+}
+#stage p {
+	font-size:16px;
+	color:#555;
+}
+#stage h1 {
+	font-family: 'Lora', serif;
+	font-size:40px;
+	color:#333;
+	font-weight:400;
+}
+#photo-credit {
+	position:fixed;
+	padding:7px;
+	bottom:0;
+	right:0;
+	background:#eee;
+	color:#333;
+}
+#photo-credit p {
+	font-size:10px;
+	margin:0;
+	padding:0;
+}
+#photo-credit a {
+	color:#999;
+}
