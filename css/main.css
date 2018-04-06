@@ -114,8 +114,8 @@ p.read-more a {
 	padding:7px;
 	bottom:0;
 	right:0;
-	background:#eee;
-	color:#333;
+	background:url('../images/black-square.png') repeat;
+	color:#eee;
 }
 #photo-caption p {
 	font-size:10px;
@@ -123,5 +123,5 @@ p.read-more a {
 	padding:0;
 }
 #photo-caption a {
-	color:#999;
+	color:#eee;
 }
