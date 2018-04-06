@@ -2,26 +2,41 @@
 /* CSS Document */
 
 body {
-	background-image: url('../images/bg-web.jpg');
+	font-family:Arial, Helvetica, sans-serif;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: #464646;
-	font-family:Arial, Helvetica, sans-serif;
+}
+body.home {
+	background-image: url('../images/bg-web.jpg');
+}
+body.thoughts {
+	background-image: url('../images/post1.jpg');
 }
 a {
 	color:#333;
 }
 a:hover {
-	color:#999;
+	color:#000;
 }
+
+h1 {
+	font-family: 'Lora', serif;
+	font-size:50px;
+	color:#333;
+	font-weight:400;
+}
+
 #container {
 	overflow:hidden;
 	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 }
+
+/* navigation bar */
 #nav {
 	font-family: 'Roboto', sans-serif;
 	font-size:14px;
@@ -39,11 +54,13 @@ a:hover {
 	text-decoration:none;
 }
 #nav li.active {
-	border-bottom:1px solid #999;
+	border-bottom:1px solid #000;
 }
 #nav li:hover {
-	border-bottom:1px solid #999;
+	border-bottom:1px solid #000;
 }
+
+/* home page - main text */
 #stage {
 	position:absolute;
 	top:15%;
@@ -53,13 +70,46 @@ a:hover {
 	color:#555;
 	font-size:20px;
 }
-#stage h1 {
-	font-family: 'Lora', serif;
-	font-size:50px;
-	color:#333;
-	font-weight:400;
+
+/* blog post */
+#post {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align:center;
 }
-#photo-credit {
+#post h1 {
+	margin:0;
+}
+p.date {
+	font-family: 'Roboto', sans-serif;
+	font-size:10px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+p.read-more {
+	clear:both;
+	border:1px solid #000;
+	padding:10px;
+	width:180px;
+	text-transform:uppercase;
+	font-size:12px;
+	margin:auto;
+	font-family: 'Roboto', sans-serif;
+}
+p.read-more:hover {
+	background:#000;
+}
+p.read-more:hover a {
+	color:#FFF;
+}
+p.read-more a {
+	text-decoration:none;
+}
+
+/* photo caption */
+#photo-caption {
 	position:fixed;
 	padding:7px;
 	bottom:0;
@@ -67,11 +117,11 @@ a:hover {
 	background:#eee;
 	color:#333;
 }
-#photo-credit p {
+#photo-caption p {
 	font-size:10px;
 	margin:0;
 	padding:0;
 }
-#photo-credit a {
+#photo-caption a {
 	color:#999;
 }
